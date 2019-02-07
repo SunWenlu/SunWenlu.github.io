@@ -1,0 +1,176 @@
+<html>
+
+<head>
+  <title>www.WenluSun-Resume.com</title>
+  <style>
+     /*Style of the header of the website*/
+	 
+     div.base-div
+	 {
+	 
+     
+	  Font:"Lucida Console" ,Monospace ;
+	  font-weight:bold;
+	  color:#4B0082;
+	  height:50px;padding:25px 20px 10px 20px;
+	  background-image:url('./images/1.jpg');
+      background-repeat:repeat-x;
+	 background-position:top;
+	 border:3px dotted #00FFFF;
+	 }
+	 
+	 .picture
+	 {
+	  float:right;
+	  
+	  
+	 }
+	 div.detailed-div
+	 
+	 { width:15%;
+	   float:left;
+	   padding:15px;
+	   font-family:"Times New Roman",Times,serif;
+	   color:#191970;
+	   font-weight:normal;
+	   background-image:url('./images/4.jpg');
+	   
+	 }
+	 div.Separator-div
+	 {width :80%;
+	 float:left;
+	 padding:15px;
+	 //border:3px dotted red;
+	 }
+	 
+     .resume
+	 { font:large;
+	   text-shadow:5px 5px 5px #20B2AA;
+	 }
+	
+	 
+	 .italic
+	 {
+	   font:italic bold 24px/60px Georgia,serif;
+	 }
+	  ul.normal
+	 {
+	   font-family:Arial,Helvetica,sans-serif;
+	 }
+	 
+	 a:link{text-decoration:none;color:rgb(150,0,50);}  /* Adjust the color of the link */
+	 a:visited {text-decoration:none;color:blue;}   /* visited link  */
+     a:hover {color:#FFccFF;}  /* mouse hover over the link 	  */
+     a:active {color:#00ccFF;}  /* when click  */
+	 
+	 /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+		
+       }
+	
+  </style>
+  
+</head>
+
+<body>
+   <header>
+    <div class="base-div" >
+	 <span class="name";>Queen Elsa of Arendelle</span>
+	</div>
+   </header>
+   
+    <div class="detailed-div" >
+	<h5>
+	     <br/>
+	      Name: Elsa<br>
+		  <br>
+		  age: 21<br>
+		  <br>
+		  Nationality: Kingdom of Arendelle<br><br>
+		  Family: Princess Anna(sister)<br><br>
+		  Creator: Disney
+	 
+	</h5>
+	</div>
+	
+	
+	 
+  
+  <div class="Separator-div" >
+  
+   <span class="resume" style="font-size:large;color:blue";>Rersonal Resume</span>
+   <p class="picture">
+	    <img src="https://lumiere-a.akamaihd.net/v1/images/6d7454cea6644379adc7e529c5790a28078a2823.jpeg?region=0,0,450,450" alt="Selfie" width=280px>
+	  </p>
+   <ul class="out">
+     <li class="italic"> educational experience</li>
+	     <ul class="normal" ;><li>was educated at home,but had some prominent teachers.</li></ul>
+		 
+     <li class="italic"> employment</li>
+	     <ul class="normal" ;>
+	     <li class="normal">Queen of the Kingdom Arendelle</li>
+		 <li class="normal">heroine in the movie <a href="https://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>.</li>
+		 </ul>
+		 
+	 <li class="italic"> experience</li>
+	     <ul class="normal" ;>
+		 <li class="normal">inadvertently sends Arendelle into an eternal winter on the evening of her coronation.</li>
+		 <li class="normal">Built a large number of skating Rinks, even a castle personally.</li>
+		 <li class="normal">Manipulate the Kingdom of Arendelle.</li>
+		 </ul>
+	 <li class="italic"> skills</li>
+	 <ul class="normal" ;>
+		 <li class="normal"> born with the power to create and manipulate ice and snow.</li>
+		 <li class="normal">famous singer with the pop misic: <a href="https://www.youtube.com/watch?v=moSFlvxnbgk">Let it go</a>.</li>
+	 </ul>
+	 <li class="italic"> hobbies</li>
+	 <ul class="normal" ;>
+	     <li class="normal">Build a <a href="http://www.vivagifts.com.au/images/olaf.JPG"> snowman</a></li>
+		 <li class="normal">play with little sister</li>
+		 </ul>
+		 
+	 <li class="italic"> contacts</li>
+	 <ul class="normal" ;>
+	     <li class="normal">Address:Kingdom of Arendelle or Disney.</li>
+		 <li class="normal">E-mail:Not_Avaliable</li>
+		 </ul>
+    </ul>
+  
+</div>
+	
+
+
+  
+   
+ 
+    <h3>Look at the Address of one of my fans</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of fans
+ 
+  var fans = {lat: 43.7, lng: -79.5};
+  // The map, centered at fans
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: fans});
+  // The marker, positioned at fans
+  var marker = new google.maps.Marker({position: fans, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk7Gtwh-K7kYTodor0SMEtfqkwzoJ8Vcw&callback=initMap">
+    </script>
+ 
+
+      
+</body>
+</html>

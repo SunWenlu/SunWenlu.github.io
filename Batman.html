@@ -1,0 +1,184 @@
+<html>
+<head>
+  <!-- name the Website;-->
+<title>www.WenluSun.com</title>
+
+  <!--Setup the style of the Website;-->
+<style>
+
+    <!--Setup the style of h1;-->
+	h1{size:media;}
+	
+	<!--set up the background and font;-->
+	span.title{background-color:#E6E6FA;}	
+	span.title{ font-family:Georgia;color:maroon;padding:5px 5px 5px 5px;}
+	
+	<!--set up the font of the link;-->
+	span.Phantom{font-style:italic;}
+	
+	<!--Setup the color of the link;-->
+	/* Adjust the color of the link */
+	a:link{text-decoration:none;color:rgb(150,0,50);}
+	/* visited link  */
+	a:visited {text-decoration:none;color:grey;}  
+	/* mouse hover over the link 	  */
+    a:hover {color:#FFccFF;} 
+	/* when click  */
+    a:active {color:#00ccFF;}  
+	
+	span.bold{font-size:125%;}
+	
+	<!--Setup the format of the table;-->
+	#courses th,td
+	{
+		border:1px solid green;
+		
+	}
+	#courses th
+	{ font-size:1em;}
+	
+	#courses tr.backColor
+	{background-color:#f3f3f3;}
+	  
+	#courses td.blueone
+	{
+		color:green;		
+	}
+	
+	/*Set the location and size of the image*/
+	div.right
+	{
+		float:right;
+	    display:block;
+	    right: 0px;
+        width: 700px;
+   
+	}
+	
+
+	
+</style>
+
+
+ <script>
+<!--Submit function used to submit the Address of the user;-->
+function Submit()
+{ 
+	var name=document.getElementById('Name').value;
+	var email=document.getElementById('Email').value;
+	
+    <!--check if there is something wrong with the input;-->
+	if((name)&&(email))
+	{
+		alert("Thanks!Stored Successfly!"+"   "+name+"   "+email);	
+	}
+	else
+	{
+	    alert("Please Input your Information completely!");
+	}
+
+}	
+ </script>
+</head>  
+
+<body>
+
+<h1>
+Wenlu Sun
+</h1>
+
+<!--the content of the website;-->
+<p><span class="title">About</span></p>
+
+<h5>
+<!--the content of "About";-->
+<p>Hi! I'm Wenlu. I love <a href="https:<!--en.wikipedia.org/wiki/Deep_learning"><span>Deep Learning</span></a>.</p>
+</h5>
+
+<!--the content of "title";-->
+<p><span class="title">Courses</span></p>
+<h5><p>Here are some courses I have taken:</p></h5>
+
+<!--the content of "courses";-->
+ <table id="courses" border=1;>
+ <div class="right">
+   <p>
+      <img src="./images/SnowMan.jpg" alt="Selfie" width=140px height=200px >
+   </p>
+ </div>
+  <tr>
+     <th>Course Number</th>
+     <th>Course Title</th>
+     <th>Semester Taken</th>
+  </tr>
+  <tr>
+     <th colspan="3";class="Credit";>For Credit</th>
+  </tr>
+  <tr class="backColor">
+     <td class="blueone">6.813</td>
+     <td class="blueone">GIS and Data Collection</td>
+     <td class="blueone">Winter 2019</td>
+  </tr>
+  <tr>
+     <td class="blueone">6.034</td>
+     <td class="blueone">Artificial Intelligence</td>
+     <td class="blueone">Winter 2019</td>
+  </tr>
+  <tr class="backColor">
+     <td class="blueone">6.314</td>
+     <td >Introduction to ALgorithms</td>
+    <td>Fall 2018</td>
+   
+  </tr>
+  <tr>
+     
+     <th colspan="3">Listener</th>
+     
+  </tr>
+  <tr class="backColor">
+     <td class="blueone">6.384</td>
+     <td class="blueone">Machine Learning</td>
+     <td class="blueone">Winter 2019</td>
+  </tr>
+  <tr>
+     <td class="blueone">6.549</td>
+     <td >German Movie</td>
+     <td>Fall 2018</td>
+  </tr>
+  
+ </table>
+
+<!--the content of "Interests";-->
+  <p><span class="title">Interests</span></p>
+  <h5>
+      <p>I am interested in <span class="bold">guitar</span>,Wechat,and detective books.
+          <br>Besides, I am a big fan of Musical,like 
+		  <a href="https:<!--www.youtube.com/watch?v=-JaeBxYCI9k">
+		     <span class="Phantom">
+		      The Phantom of the Opera
+		     </span>
+		  </a>
+		 ,<a href="https:<!--www.youtube.com/watch?v=Ivu0qE66JzU&index=4&list=RDgVB-4MwgGU8">
+		     <span class="Phantom">
+			  Elizabeth
+			 </span>
+		  </a>etc.
+		  <br>I can speak English,中文,and Deutsch.
+	  </p>
+  </h5>
+  
+  <!--the content of "Subscribe to newsletter";-->
+  <p><span class="title">Subscribe to newsletter</span></p>
+  <h5><p>Would love to receive newsletter.Submit below!</p>
+  </h5>
+  
+  <!--the text and button of Submit;-->
+  <p >Name:<input type="text" id="Name"/></p>
+  <p >E-mail:<input type="text" id="Email"/></p>
+  
+  <button type="button" onclick="Submit()">Submit</button>
+   
+
+
+</body>
+</html>
